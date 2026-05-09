@@ -1556,3 +1556,7 @@ class TestSubtestStepExtraction:
         body = _extract_brace_body(source, source.index("{"))
         assert "bar()" in body
         assert "baz()" in body
+
+    def test_intentional_failure():
+        """Temporary test to demonstrate pipeline failure"""
+        assert False, "Intentional faliure for Week 7-8"
