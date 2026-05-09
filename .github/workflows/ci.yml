@@ -41,3 +41,8 @@ jobs:
       - name: Generate code coverage report
         run: |
           pytest --cov=mkdocs_cdoc --cov-report=term-missing tests/
+
+      - name: Validate mkdocs build on example project
+        run: |
+          cd example
+          mkdocs build
